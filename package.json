@@ -1,17 +1,17 @@
 {
-  "name": "better-folding-plus",
-  "displayName": "Better Folding Plus",
+  "name": "better-folding-ubber",
+  "displayName": "Better Folding (Ubber)",
   "description": "Improve the folding experience in VS Code",
-  "version": "0.6.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AtroxEGO/vscode-better-folding"
+    "url": "https://github.com/ubberkid/better-folding-ubber"
   },
   "icon": "icon_large.png",
-  "publisher": "AtroxEGO",
+  "publisher": "ubberkid",
   "categories": [
     "Other"
   ],
@@ -33,57 +33,57 @@
   "main": "./out/main.js",
   "contributes": {
     "configuration": {
-      "title": "Better Folding",
+      "title": "Better Folding (Ubber)",
       "properties": {
-        "betterFoldingPlus.foldClosingBrackets": {
+        "betterFoldingUbber.foldClosingBrackets": {
           "order": 1,
           "type": "boolean",
           "default": true,
           "markdownDescription": "Include closing brackets like `}` and `]` in the folding range."
         },
-        "betterFoldingPlus.foldClosingTags": {
+        "betterFoldingUbber.foldClosingTags": {
           "order": 1,
           "type": "boolean",
           "default": true,
           "markdownDescription": "Include closing tags like `</div>` and `</p>` in the folding range."
         },
-        "betterFoldingPlus.showFoldedBodyLinesCount": {
+        "betterFoldingUbber.showFoldedBodyLinesCount": {
           "order": 2,
           "type": "boolean",
           "default": true,
           "markdownDescription": "Shows the number of lines folded, excluding the closing bracket line. \n\nExample: `function example() { ⋯ 3 lines ⋯ `"
         },
-        "betterFoldingPlus.showFoldedBrackets": {
+        "betterFoldingUbber.showFoldedBrackets": {
           "order": 3,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "Shows brackets like `{` and `}` in the collapsed text. Only applies if `#betterFoldingPlus.foldClosingBrackets#` is `enabled`. \n\nExample: `function example() {…}`."
+          "markdownDescription": "Shows brackets like `{` and `}` in the collapsed text. Only applies if `#betterFoldingUbber.foldClosingBrackets#` is `enabled`. \n\nExample: `function example() {…}`."
         },
-        "betterFoldingPlus.showFunctionParameters": {
+        "betterFoldingUbber.showFunctionParameters": {
           "order": 4,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "Shows the function parameters in the collapsed text for functions with params in multiple lines. Only applies if `#betterFoldingPlus.showFoldedBrackets#` is `enabled`. \n\nExample: `function example(firstParam, secondParam) {…}`."
+          "markdownDescription": "Shows the function parameters in the collapsed text for functions with params in multiple lines. Only applies if `#betterFoldingUbber.showFoldedBrackets#` is `enabled`. \n\nExample: `function example(firstParam, secondParam) {…}`."
         },
-        "betterFoldingPlus.chainFoldingRanges": {
+        "betterFoldingUbber.chainFoldingRanges": {
           "order": 5,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "On folding a range, fold all the ranges that start on the same line where the original range ends. Only applies if `#betterFoldingPlus.showFoldedBrackets#` is `enabled`. \n\nEnabled: `function example(…) {…}`. \n\nDisabled: `function example(…) {`."
+          "markdownDescription": "On folding a range, fold all the ranges that start on the same line where the original range ends. Only applies if `#betterFoldingUbber.showFoldedBrackets#` is `enabled`. \n\nEnabled: `function example(…) {…}`. \n\nDisabled: `function example(…) {`."
         },
-        "betterFoldingPlus.showOnlyRegionsDescriptions": {
+        "betterFoldingUbber.showOnlyRegionsDescriptions": {
           "order": 6,
           "type": "boolean",
           "default": false,
           "markdownDescription": "Only shows the region description in the collapsed text. \n\nExample: `// #region some text`.\n\nBecomes: `some text`."
         },
-        "betterFoldingPlus.showObjectPreviews": {
+        "betterFoldingUbber.showObjectPreviews": {
           "order": 6,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "Show the first property in the collapsed text of an object literal. Only applies if `#betterFoldingPlus.showFoldedBrackets#` is `enabled`. \n\nExample: `{ id:'123',… }`."
+          "markdownDescription": "Show the first property in the collapsed text of an object literal. Only applies if `#betterFoldingUbber.showFoldedBrackets#` is `enabled`. \n\nExample: `{ id:'123',… }`."
         },
-        "betterFoldingPlus.excludedLanguages": {
+        "betterFoldingUbber.excludedLanguages": {
           "order": 7,
           "type": "array",
           "default": [],
@@ -93,12 +93,12 @@
     },
     "commands": [
       {
-        "command": "betterFoldingPlus.createZenFoldsAroundSelection",
-        "title": "Better Folding: Create Zen Folds Around Selection"
+        "command": "betterFoldingUbber.createZenFoldsAroundSelection",
+        "title": "Better Folding (Ubber): Create Zen Folds Around Selection"
       },
       {
-        "command": "betterFoldingPlus.clearZenFolds",
-        "title": "Better Folding: Clear Zen Folds"
+        "command": "betterFoldingUbber.clearZenFolds",
+        "title": "Better Folding (Ubber): Clear Zen Folds"
       }
     ]
   },
